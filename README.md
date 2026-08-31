@@ -15,6 +15,8 @@ This is a **frontend-only** build. There is no backend, database, authentication
 - Report library (revenue, subscriptions, customers, invoices, payments, churn, usage) and an advanced analytics view
 - Billing settings screen with local, in-memory preferences
 
+There is no authentication in front of the app — it opens straight into the dashboard.
+
 ## Tech Stack
 
 - **Framework**: Next.js 16 (App Router), TypeScript, Tailwind CSS v4
@@ -41,7 +43,6 @@ This is a **frontend-only** build. There is no backend, database, authentication
 - Reports
 - Analytics
 - Settings
-- Authentication (login / register, two layout variants)
 
 ## Getting Started
 
@@ -93,7 +94,6 @@ src
 ├── app
 │   ├── (external)          # Public landing page
 │   └── (main)
-│       ├── auth            # Authentication screens
 │       └── dashboard
 │           └── billing     # Dimension Billing app (all modules)
 ├── components               # Shared UI (shadcn/ui primitives)

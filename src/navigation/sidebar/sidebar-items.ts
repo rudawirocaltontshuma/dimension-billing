@@ -1,4 +1,4 @@
-import { CreditCard, Fingerprint, type LucideIcon } from "lucide-react";
+import { CreditCard, type LucideIcon } from "lucide-react";
 
 export type NavBadge = "new" | "soon";
 
@@ -48,23 +48,6 @@ export const sidebarItems: NavGroup[] = [
         title: "Dashboard",
         url: "/dashboard/billing",
         icon: CreditCard,
-      },
-    ],
-  },
-  {
-    id: 2,
-    label: "Pages",
-    items: [
-      {
-        id: "authentication",
-        title: "Authentication",
-        icon: Fingerprint,
-        subItems: [
-          { id: "auth-login-v1", title: "Login v1", url: "/auth/v1/login", newTab: true },
-          { id: "auth-login-v2", title: "Login v2", url: "/auth/v2/login", newTab: true },
-          { id: "auth-register-v1", title: "Register v1", url: "/auth/v1/register", newTab: true },
-          { id: "auth-register-v2", title: "Register v2", url: "/auth/v2/register", newTab: true },
-        ],
       },
     ],
   },

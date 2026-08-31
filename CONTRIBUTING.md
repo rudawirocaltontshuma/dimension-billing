@@ -6,7 +6,7 @@ Thanks for showing interest in improving **Dimension Billing**. This guide will 
 
 ## Overview
 
-Dimension Billing is a frontend-only demonstration of a SaaS subscription and billing management platform, built with **Next.js 16**, **TypeScript**, **Tailwind CSS v4**, and **shadcn/ui**. There is no backend, database, authentication, or payment processing — all data is fictional and generated locally. The goal is to keep the codebase modular, scalable, and easy to extend.
+Dimension Billing is a frontend-only demonstration of a SaaS subscription and billing management platform, built with **Next.js 16**, **TypeScript**, **Tailwind CSS v4**, and **shadcn/ui**. There is no backend, database, authentication, or payment processing — all data is fictional and generated locally. The app opens straight into the dashboard. The goal is to keep the codebase modular, scalable, and easy to extend.
 
 ---
 
@@ -19,7 +19,6 @@ src
 ├── app
 │   ├── (external)              # Public landing page
 │   └── (main)
-│       ├── auth                # Authentication screens
 │       └── dashboard
 │           └── billing         # Dimension Billing app
 │               ├── _components # Shared billing UI (nav, KPI cards, badges, etc.)
