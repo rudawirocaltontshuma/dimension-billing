@@ -1,122 +1,65 @@
-# Next.js Admin Template with TypeScript & Shadcn UI
+# Dimension Billing
 
-**Studio Admin** - Includes multiple dashboards, authentication layouts, customizable theme presets, and more.
+**Dimension Billing** is a frontend demonstration of a SaaS subscription and billing management platform — dashboards, subscriptions, plans, customers, invoices, payments, usage, credits, discounts, revenue analytics, dunning, tax overview, reports, and settings, all in one app.
 
-<img src="https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/main/media/dashboard.png?version=5" alt="Dashboard Screenshot">
-
-Most admin templates I found, free or paid, felt cluttered, outdated, or too rigid. I built this as a cleaner alternative with features often missing in others, such as theme toggling and layout controls, while keeping the design modern, minimal, and flexible.
-
-> **View demo:** [studio admin](https://next-shadcn-admin-dashboard.vercel.app)
-
-> [!NOTE]
-> Looking for the Base UI version? Check out [next-shadcn-admin-dashboard-baseui](https://github.com/arhamkhnz/next-shadcn-admin-dashboard-baseui).
->
-> Looking for the React Aria version? Check out [arhamkhnz/next-shadcn-admin-dashboard-aria](https://github.com/arhamkhnz/next-shadcn-admin-dashboard-aria).
->
-> Looking for the TanStack Start version? Check out [tanstack-shadcn-admin-dashboard](https://github.com/arhamkhnz/tanstack-shadcn-admin-dashboard).
-
-> [!TIP]
-> I’m also working on Nuxt.js and Svelte versions of this dashboard. They’ll be live soon.
+This is a **frontend-only** build. There is no backend, database, authentication, or payment processing — every screen is powered by realistic, internally-consistent, locally generated mock data so the UI can be explored end to end.
 
 ## Features
 
-- Built with Next.js 16, TypeScript, Tailwind CSS v4, and Shadcn UI  
-- Responsive and mobile-friendly  
-- Customizable theme presets (light/dark modes with color schemes like Tangerine, Brutalist, and more)  
-- Flexible layouts (collapsible sidebar, variable content widths)  
-- Authentication flows and screens  
-- Prebuilt dashboards (Default, CRM, Finance, Analytics, Productivity, Dimension Billing) plus legacy variants  
-- Role-Based Access Control (RBAC) with config-driven UI and multi-tenant support *(planned)*  
-
-> [!NOTE]
-> The default dashboard uses the **shadcn neutral** theme.  
-> It also includes additional color presets inspired by [Tweakcn](https://tweakcn.com):  
->
-> - Tangerine  
-> - Neo Brutalism  
-> - Soft Pop  
->
-> You can create more presets by following the same structure as the existing ones.
-
-> Looking for the **Next.js 15** version?  
-> Check out the [`archive/next15`](https://github.com/arhamkhnz/next-shadcn-admin-dashboard/tree/archive/next15) branch.  
-> This branch contains the setup prior to upgrading to Next 16 and the React Compiler.
-
-> Looking for the **Next.js 14 + Tailwind CSS v3** version?  
-> Check out the [`archive/next14-tailwindv3`](https://github.com/arhamkhnz/next-shadcn-admin-dashboard/tree/archive/next14-tailwindv3) branch.  
-> It has a different color theme and is not actively maintained, but I try to keep it updated with major changes.  
+- Built with Next.js 16, TypeScript, Tailwind CSS v4, and shadcn/ui
+- Fully responsive — mobile navigation via `Sheet`, horizontally scrollable tables, stacking cards, resizable charts
+- Light/dark theme support with selectable color presets
+- Executive dashboard with MRR/ARR trends, churn, subscription growth, and revenue breakdowns (Recharts)
+- Subscription, plan, customer, and invoice directories with detail pages
+- Payment history, usage analytics, credits, discounts, dunning, and tax overview modules
+- Report library (revenue, subscriptions, customers, invoices, payments, churn, usage) and an advanced analytics view
+- Billing settings screen with local, in-memory preferences
 
 ## Tech Stack
 
-- **Framework**: Next.js 16 (App Router), TypeScript, Tailwind CSS v4  
-- **UI Components**: Shadcn UI  
-- **Validation**: Zod  
-- **Forms & State Management**: React Hook Form, Zustand  
-- **Tables & Data Handling**: TanStack Table  
-- **Tooling & DX**: Biome, Husky  
+- **Framework**: Next.js 16 (App Router), TypeScript, Tailwind CSS v4
+- **UI Components**: shadcn/ui, Radix UI, Lucide Icons
+- **Charts**: Recharts
+- **Forms & State**: React Hook Form, Zod, Zustand
+- **Tables**: TanStack Table
+- **Tooling**: Biome, Husky
 
 ## Screens
 
-### Available
-- Default Dashboard  
-- CRM Dashboard  
-- Finance Dashboard  
-- Analytics Dashboard  
-- Productivity Dashboard  
-- E-commerce Dashboard  
-- Academy Dashboard  
-- Logistics Dashboard  
-- Infrastructure Dashboard  
-- Dimension Billing (SaaS Subscription & Billing Management) Dashboard  
-- File Manager  
-- Patient Monitoring  
-- Chat Page  
-- Email Page  
-- Profile  
-- Users Management  
-- Roles Management  
-- Kanban Board  
-- Tasks Page  
-- Invoice Page  
-- Calendar Page  
-- Authentication (4 screens)  
-- Legacy: Default v1, CRM v1, Finance v1, Analytics v1
-
-### Planned
-I’ve added all the planned screens. Feel free to open an issue for requesting something specific.
-
-## Colocation File System Architecture
-
-This project follows a **colocation-based architecture** each feature keeps its own pages, components, and logic inside its route folder.  
-Shared UI, hooks, and configuration live at the top level, making the codebase modular, scalable, and easier to maintain as the app grows.
-
-For a full breakdown of the structure with examples, see the [Next Colocation Template](https://github.com/arhamkhnz/next-colocation-template).
+- Dashboard
+- Subscriptions (directory + detail)
+- Plans (directory + detail)
+- Customers (directory + detail)
+- Invoices (directory + detail)
+- Payments
+- Usage
+- Credits
+- Discounts
+- Revenue
+- Dunning
+- Tax Overview
+- Reports
+- Analytics
+- Settings
+- Authentication (login / register, two layout variants)
 
 ## Getting Started
-
-You can run this project locally, or deploy it instantly with Vercel.
-
-### Deploy with Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Farhamkhnz%2Fnext-shadcn-admin-dashboard)
-
-_Deploy your own copy with one click._
 
 ### Run locally
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/arhamkhnz/next-shadcn-admin-dashboard.git
+   git clone https://github.com/rudawirocaltontshuma/saas_subscription_billing_platform.git
    ```
-   
+
 2. **Navigate into the project**
    ```bash
-    cd next-shadcn-admin-dashboard
+   cd saas_subscription_billing_platform
    ```
-   
+
 3. **Install dependencies**
    ```bash
-    npm install
+   npm install
    ```
 
 4. **Start the development server**
@@ -124,24 +67,48 @@ _Deploy your own copy with one click._
    npm run dev
    ```
 
-Your app will be running at [http://localhost:3000](http://localhost:3000)
+The app runs at [http://localhost:3000](http://localhost:3000).
 
-### Formatting and Linting
+### Production build
 
-Format, lint, and organize imports
+```bash
+npm run build
+npm run start
+```
+
+### Formatting and linting
+
 ```bash
 npx @biomejs/biome check --write
 ```
-> For more information on available rules, fixes, and CLI options, refer to the [Biome documentation](https://biomejs.dev/).
 
----
+> See the [Biome documentation](https://biomejs.dev/) for available rules and CLI options.
 
-> [!IMPORTANT]  
-> This project is updated frequently. If you’re working from a fork or an older clone, pull the latest changes before syncing. Some updates may include breaking changes.
+## Project Structure
 
----
+This project follows a colocation-based file system: each feature keeps its own pages, components, and mock data inside its route folder.
 
-Contributions are welcome. Feel free to open issues, feature requests, or start a discussion.
+```
+src
+├── app
+│   ├── (external)          # Public landing page
+│   └── (main)
+│       ├── auth            # Authentication screens
+│       └── dashboard
+│           └── billing     # Dimension Billing app (all modules)
+├── components               # Shared UI (shadcn/ui primitives)
+├── config                   # App configuration
+├── hooks                    # Reusable hooks
+├── lib                      # Utilities
+├── navigation                # Sidebar navigation config
+├── stores                   # Client-side state (Zustand)
+└── styles                   # Tailwind / theme presets
+```
 
+## Disclaimer
 
-**Happy Vibe Coding!**
+All customers, subscriptions, invoices, payments, and financial figures shown in this application are fictional and generated for demonstration purposes only. No real billing, payment processing, or personal data is involved.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
