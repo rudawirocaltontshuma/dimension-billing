@@ -1,4 +1,4 @@
-// Nexora Billing — fictional, internally-consistent mock data.
+// Dimension Billing — fictional, internally-consistent mock data.
 // Everything here is generated deterministically (no Math.random at module scope leakage across renders)
 // so server and client render the same output.
 
@@ -679,7 +679,7 @@ export const discounts: Discount[] = [
   {
     id: "disc-001",
     name: "New Year Launch",
-    code: "NEXORA2026",
+    code: "DIMENSION2026",
     type: "Percentage",
     value: 20,
     usageCount: 184,
@@ -727,7 +727,7 @@ export const discounts: Discount[] = [
   {
     id: "disc-005",
     name: "Black Friday 2026",
-    code: "NEXORABF26",
+    code: "DIMENSIONBF26",
     type: "Percentage",
     value: 35,
     usageCount: 0,

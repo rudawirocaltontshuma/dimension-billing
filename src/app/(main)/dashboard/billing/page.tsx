@@ -17,7 +17,7 @@ import { arpu, arr, churnRate, kpis } from "./_data/mock-data";
 export default function BillingDashboardPage() {
   return (
     <BillingPageShell
-      title="NEXORA BILLING"
+      title="DIMENSION BILLING"
       description="SaaS Subscription & Billing Management Platform — executive overview"
     >
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
