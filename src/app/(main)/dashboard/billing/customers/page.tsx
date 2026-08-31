@@ -4,7 +4,7 @@ import { CustomersTable } from "./_components/customers-table";
 
 export default function CustomersPage() {
   return (
-    <BillingPageShell title="Customers" description={`${customers.length} customers on Nexora Billing`}>
+    <BillingPageShell title="Customers" description={`${customers.length} customers on Dimension Billing`}>
       <CustomersTable />
     </BillingPageShell>
   );
